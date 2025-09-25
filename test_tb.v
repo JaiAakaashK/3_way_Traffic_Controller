@@ -1,7 +1,7 @@
 module test_tb();
     reg clk, rst;
     wire wg1, wg2, eg1, eg2, ng1, ng2, wy, ey, ny, wr, nr, er;
-    Test t1(clk, rst, wg1, wg2, eg1, eg2, ng1, ng2, wy, ey, ny, wr, nr, er);
+    Traffic_Controller_3_way t1(clk, rst, wg1, wg2, eg1, eg2, ng1, ng2, wy, ey, ny, wr, nr, er);
     always #10 clk = ~clk;
     initial begin
         clk = 0;
@@ -15,4 +15,5 @@ module test_tb();
                  $time, rst, wg1, wg2, eg1, eg2, ng1, ng2, wy, ey, ny, wr, nr, er);
     end
 endmodule
+
 
